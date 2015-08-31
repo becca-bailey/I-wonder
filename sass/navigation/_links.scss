@@ -1,0 +1,22 @@
+a {
+	color: $color__link;
+	-webkit-transition: color linear 0.15s;
+	-moz-transition: color linear 0.15s;
+	transition: color linear 0.15s;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

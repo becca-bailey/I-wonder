@@ -1,0 +1,55 @@
+.content-area {
+	float: left;
+	margin: 0 auto;
+	width: $size__site-main;
+}
+
+.site-main {
+	margin: 0 auto;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}
+
+#home-icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 5%;
+}
+
+$icon-size: 300px;
+
+.icon-1,
+.icon-2,
+.icon-3 {
+	width: $icon-size;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+
+	.icon-hover {
+		width: $icon-size;
+		height: $icon-size;
+		position: absolute;
+		z-index: 10;
+		background-color: rgba(255, 255, 255, .7);
+		display: none;
+	}
+	&:hover {
+		.icon-hover {
+			display: block;
+		}
+	}
+}
+

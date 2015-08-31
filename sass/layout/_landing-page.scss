@@ -1,0 +1,14 @@
+@import url(layout/_full-width.scss);
+
+.page-template-page_landing-page {
+	#site-navigation {
+		display: none;
+	}
+	body {
+		background-color: blue;
+	}
+}
+#home-widget-area {
+	width: 100%;
+	height: auto;
+}

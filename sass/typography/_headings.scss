@@ -1,0 +1,46 @@
+.site-title {
+	font: 900 4em/1em $font__heading;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent), 
+	url($header-background);
+	-webkit-background-clip: text;
+	background-size: cover;
+	text-transform: lowercase;
+	margin-bottom: 0 !important;
+	&:hover {
+		background: -webkit-linear-gradient(transparent, transparent), 
+	url($header-background);
+		-webkit-background-clip: text;
+		background-position: 100%;
+	}
+	&:active {
+		background: -webkit-linear-gradient(transparent, rgba(255, 255, 255, .8)), 
+	url($header-background);	
+		-webkit-background-clip: text;
+		background-position: 100%;
+	}
+	@media screen and (min-width: $breakpoint__large) {
+		font-size: 6em;
+
+	}
+}
+
+.site-description {
+	font: 2.2em $font__heading2;
+	text-align: center;
+	margin-top: .2em !important;
+	margin-bottom: 1em !important;
+	@media screen and (min-width: $breakpoint__medium) {
+		font-size: 3.2em;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1 {
+	font: 700 $font__heading;
+}
